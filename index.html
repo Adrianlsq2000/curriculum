@@ -4,37 +4,34 @@
 <head>
     <link rel="stylesheet" href="stylesheets/style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>CV - Adrian Salamea</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Adrian Salamea</h1>
-        <img id="photo" src="media/cara.jpg" alt="Foto de Adrian">
-            <nav> 
-                <ul>
-                    <li><a href="#resumen">Resumen</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#educacion">Educación</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                </ul>
-            </nav>
-        
+        <nav> 
+            <ul>
+                <li><a href="#informacion">Información Personal</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contactos</a></li>
+            </ul>
+        </nav>
+        <div id="FotoPrincipal">
+            <img id="photo" src="media/cara.jpg" alt="Foto de Adrian Salamea">
+            <h1 id="nombreP">Adrian Salamea</h1> 
+        </div>  
     </header>
     <main>
-        <section id="resumen">
-            <h2 class="subtitle">Resumen</h2>
-            <p class="texto">Soy un estudiante con ganas de aprender sobre el desarrollo web.Tambien quisiera aprender sobre el desarrollo de video juegos y CyberSecurity</p>          
-        </section>
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia</h2>
+        <section id="informacion">
+            <h2 class="subtitle">Informacón Personal</h2>
+            <p class="texto">Soy un estudiante con ganas de aprender sobre el desarrollo web. Tambien quisiera aprender sobre el desarrollo de video juegos y CyberSecurity</p>
         </section>
         <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
+            <h2 class="subtitle">Educación</h2>          
             <table border="1">
                 <thead>
                 <tr>
@@ -50,26 +47,32 @@ initial-scale=1.0">
                 <td>5</td>
                 </tr>
                 </tbody>
-                </table>
+            </table>
         </section>
         <section id="habilidades">
             <h2 class="subtitle">Habilidades</h2>
         </section>
         <section id="proyectos">
             <h2 class="subtitle">Proyectos</h2>
-            <h3>Juego Adivina el animal</h3>
-            <p>Este proyecto está desarrollado en el lenguaje de programación Java y utiliza herramientas como Scene Builder. Consiste en un juego en el que la computadora adivina el animal en el que estás pensando mediante una serie de preguntas.</p>
-            <video width="320" height="180" controls>
-                <source src="video-local.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>    
+            <div class="Proyecto-T">
+                <div class="CuadradoTexto">
+                    <h3>Proyecto Adivinaza Computador</h3>
+                    <p>Este proyecto está desarrollado en el lenguaje de programación Java y utiliza herramientas como Scene
+                        Builder.
+                        Consiste en un juego en el que la computadora adivina el animal en el que estás pensando mediante una
+                        serie de
+                        preguntas.</p>
+                </div>
+                <div class="proyecto-video">
+                    <video width="320" height="180" controls title="YoutubeVideo">
+                        <source src="media/VidoPPreguntame.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </div>
         </section>
-        <section id="Reuniones">
-            <h2 class="subtitle">Reuniones</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198456.5944351368!2d-74.25987524367672!3d40.69767007136848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a182cb71927%3A0xa6fe5e2e833f09f6!2sNew%20York!5e0!3m2!1ses!2sus!4v1696846876334!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-        <section>
-            <h2 class="subtitle">Contáctanos</h2>
+        <section id = "contacto">
+            <h2 class="subtitle">Contacto y Reuniones</h2>
             <form action="#" method="post">
                 <!-- Nombre -->
                 <label for="nombre">Nombre:</label>
@@ -95,16 +98,16 @@ initial-scale=1.0">
                 <!-- Enviar -->
                 <button type="submit">Enviar mensaje</button>
             </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.51450030041!2d-80.04697183567608!3d-2.1475304351033766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1716782474152!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
     <footer>
-        <p>© Adrian - 2023</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
-        </ul>
+        <p>© Adrian Salamea - 2024</p>
+        <p> Conoce más de mi:
+        <a href="https://www.linkedin.com/in/adrian-salamea-127573254/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Adrianlsq2000" target="_blank">GitHub</a>
+        </p>
     </footer>
 </body>
-
 </html>
 
