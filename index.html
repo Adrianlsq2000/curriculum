@@ -17,7 +17,7 @@
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contactos</a></li>
+                <li><a href="#contacto">Contactame</a></li>
             </ul>
         </nav>
         <div id="FotoPrincipal">
@@ -28,35 +28,48 @@
     <main>
         <section id="informacion">
             <h2 class="subtitle">Informacón Personal</h2>
-            <p class="texto">Soy un estudiante con ganas de aprender sobre el desarrollo web. Tambien quisiera aprender sobre el desarrollo de video juegos y CyberSecurity</p>
+            <div id="divIP">
+                <p class="texto">Soy un estudiante entusiasta con gran interés en aprender más sobre desarrollo web. También me gustaría profundizar en el desarrollo de videojuegos y en ciberseguridad. Quisiera trabajar en proyectos relacionados con deportes extremos, desarrollo de videojuegos ya que estoy relacionado con estos temas.</p>
+            </div>
         </section>
         <section id="educacion">
             <h2 class="subtitle">Educación</h2>          
-            <table border="1">
+            <table id="tabla1" border="2">
                 <thead>
-                <tr>
-                <th>Escuela</th>
-                <th>Estudios</th>
-                <th>Años de estudio</th>
-                </tr>
+                    <tr>
+                        <th>Instituto</th>
+                        <th>Estudios</th>
+                        <th>Estado</th>
+                    </tr>
                 </thead>
                 <tbody>
-                <tr>
-                <td>Domingo Comin</td>
-                <td>Estudios basicos</td>
-                <td>5</td>
-                </tr>
+                    <tr>
+                        <td>Domingo Comin</td>
+                        <td>Bachillerato en mantenimiento e instalación de maquinas y equipos electricos</td>
+                        <td>Completado</td>
+                    </tr>
+                    <tr>
+                        <td>ESPOL</td>
+                        <td>Ingeneria en Ciencias de la Computación</td>
+                        <td>En proceso</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
         <section id="habilidades">
             <h2 class="subtitle">Habilidades</h2>
+            <ul>
+                <li><img class="habi" src="media/python.png" alt="fotopython"><img></li>
+                <li><img class="habi" src="media/java.png" alt="fotojava"><img></li>
+                <li><img class="habi" src="media/sql.png" alt="fotosql"><img></li>
+                <li><img class="habi" src="media/html.png" alt="fotohtml"><img></li>
+            </ul>
         </section>
         <section id="proyectos">
             <h2 class="subtitle">Proyectos</h2>
             <div class="Proyecto-T">
                 <div class="CuadradoTexto">
-                    <h3>Proyecto Adivinaza Computador</h3>
+                    <strong>Computador Adivina:</strong> 
                     <p>Este proyecto está desarrollado en el lenguaje de programación Java y utiliza herramientas como Scene
                         Builder.
                         Consiste en un juego en el que la computadora adivina el animal en el que estás pensando mediante una
@@ -72,33 +85,39 @@
             </div>
         </section>
         <section id = "contacto">
-            <h2 class="subtitle">Contacto y Reuniones</h2>
-            <form action="#" method="post">
-                <!-- Nombre -->
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
-    
-                <!-- Correo electrónico -->
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
-    
-                <!-- Asunto -->
-                <label for="asunto">Asunto:</label>
-                <select id="asunto" name="asunto">
-                    <option value="consulta">Consulta general</option>
-                    <option value="soporte">Soporte técnico</option>
-                    <option value="sugerencia">Sugerencia</option>
-                    <option value="otro">Otro</option>
-                </select>
-    
-                <!-- Mensaje -->
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje"></textarea>
-    
-                <!-- Enviar -->
-                <button type="submit">Enviar mensaje</button>
-            </form>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.51450030041!2d-80.04697183567608!3d-2.1475304351033766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1716782474152!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <h2 id ="contactoReuniones" class="subtitle">Contactame</h2>
+            <div class="contacto-contenedor">
+                <form action="#" method="post" class="contacto-form">
+                    <!-- Nombre -->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+            
+                    <!-- Correo electrónico -->
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+            
+                    <!-- Asunto -->
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="consulta">Consulta general</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="reunion">Reunión Presencial</option>
+                    </select>
+            
+                    <!-- Mensaje -->
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje"></textarea>
+            
+                    <!-- Enviar -->
+                    <button class="submit-button" type="submit">Enviar mensaje</button>
+                </form>
+                <div class="contacto-info">
+                    <p>Si tienes un proyecto interesante o quieres discutir algún tema, separa una reunión presencial los martes, jueves y nos vemos aquí.</p>
+                    <iframe class="mapaC"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.51450030041!2d-80.04697183567608!3d-2.1475304351033766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1716782474152!5m2!1ses-419!2sec"
+                        width="650" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

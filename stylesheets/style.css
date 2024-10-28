@@ -1,20 +1,27 @@
 * {
-    font-family: Geneva, Verdana, sans-serif;
+    font-family: SemiBold,sans-serif;
     font-weight: bold;
     padding: 0;
     margin: 0;
 }
 h1 {
     color: #f19f1a;
-    font-size: 40px;
+    font-size: 50px large;
     text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
 }
-h3{
-    color: #f19f1a;
-    font-size: 18px;
-    text-align: center;
+strong{
+    color: black;
+    font-size: 20px;
+    text-align: start;
     font-weight: bold;
+    text-align: start;
+}
+#proyecto p{
+    font-weight: lighter;
+    text-align: start;
+    font-size: medium;
 }
 
 #photo {
@@ -22,6 +29,10 @@ h3{
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
+}
+#photoExtremo{
+    width: 300px;
+    height: 150px;
 }
 
 #FotoPrincipal{
@@ -31,17 +42,62 @@ h3{
     margin-top: 90px;
     gap: 10px; 
 }
+#tabla1{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 20px 0;
+    font-size: 18px;
+    box-shadow: 0 2px 10px black;
+    border-color: #f19f1a;
+    table-layout:initial;
+}
+#tabla1 th,tabla1 td{
+    padding: 12px 15px;
+    border-bottom: 1px solid blacks;
+}
+#tabla1 tr:hover{
+    background-color: #f19f1a;
+    transition: background-color 0.3s;
+}
+#tabla1 th{
+    text-transform: uppercase;
+}
 
 .subtitle{
     text-transform: uppercase;
     color: #f19f1a;
-    font-size: 20px;
-    text-align: start;
+    font-size: 30px large;
+    text-align: center;
     font-weight: bold;
     font-family: 'Bold 700', Verdana;
+    margin-bottom: 15px;
 }
-section p{
-    text-align: start;
+
+main {
+    display: grid;
+    gap: auto;
+    grid-template-areas:
+        "inf inf inf inf"
+        "edu edu edu edu"
+        "hab hab hab hab"
+        "pro pro pro pro"
+        "con con con con";
+}
+#informacion{
+    grid-area: inf;
+}
+#educacion{
+    grid-area: edu;
+}
+#habilidades{
+    grid-area: hab;
+}
+#proyectos{
+    grid-area: pro;
+}
+#contacto{
+    grid-area: con;
 }
 section {
 
@@ -49,8 +105,7 @@ section {
     margin: 4px 2px 8px 2px; 
  
     /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
-    border: 0.2pt solid #cedddd; 
- 
+    
     /* relleno (espacio interno) de 
     1.5% en la parte superior e inferior y 
     0.8% a los lados derecho e izquierdo. */
@@ -63,20 +118,7 @@ section {
     padding-left: 1.2%; 
     padding-right: 1.2%; 
 
-     /* borde redondeado con un radio de 5 píxeles */
-
-   /* en navegadores basados en WebKit, 
-   como versiones antiguas de Safari y Chrome. */
-   -webkit-border-radius: 5px; 
-
-   /* en navegadores antiguos de Mozilla, 
-   como Firefox.  */
-   -moz-border-radius: 5px;    
-
-   /* en navegadores modernos. */
-   border-radius: 5px;    
-
-   
+    
    /* sombra a un elemento */
 
    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
@@ -115,7 +157,7 @@ header nav {
     display: flex;
     justify-content: center;
 }
-/* Poner el nav en horizontal*/
+
 nav ul{
     padding-top: 1vh;
     background-color: white;
@@ -132,18 +174,67 @@ nav ul a {
     height: 100%;
     color: #f19f1a;
 }
-/* Centro de imagen(Principal) y nombre*/
+
 header div{
     display: flex;
     align-items: center;
     gap: 75px;
     margin-top: 80px;
 }
+#habilidades ul {
+    font-size: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 2fr));
+    gap: 100px;
+    justify-content: center;
+    
+}
+.habi{
+    transition: filter 0.3 ease;
+}
+.habi:hover{
+    filter: brightness(0) saturate(100%) invert(33%) sepia(87%) saturate(507%) hue-rotate(355deg) brightness(102%) contrast(104%);
+}
 
 #TituloP1{
     text-align: start;
 }
+#contacto{
+    transition: background-color 0.3s;
+    margin-bottom: 0px;
+}
+#contacto:hover,
+#contacto:focus-within{
+    background-color: black;
+}
 
+.contacto-contenedor{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+.contacto-form{
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 
+        0 4px 6px black, 
+        0 0 0 4px #f19f1a inset;
+    max-width: 500px;
+    width: 40%;
+    margin: auto;
+    transition: background-color 0.3s;
+}
+#divIP{
+    box-shadow: 
+        0 4px 6px black, 
+        0 0 0 4px #f19f1a inset;
+    padding: 2%;
+    transition: background-color 0.3s;
+    text-align: center;
+}
 #proyectos .Proyecto-T{
     display: flex;
     align-items: center;
@@ -152,17 +243,80 @@ header div{
     border-radius: 8px;
     box-shadow: 0 4px 6px #f19f1a;;
     margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+.contacto-form:hover,
+.contacto-info:hover,
+.contacto-form:focus-within,
+.contacto-info:focus-within,
+#divIP:hover,
+#divIP-within,
+#proyectos .Proyecto-T:hover,
+#proyectos .Proyecto-T-whithin{
+    background-color: #f19f1a; /* Color de fondo al pasar el mouse */
+}
+.contacto-info{
+    width: 56%;
+    text-align: center;
+    box-shadow: 
+        0 4px 6px black, 
+        0 0 0 4px #f19f1a inset;
+    border-radius: 12px;
+    background-color: white;
+    margin:auto;
+    transition: background-color 0.3s ease;
+}
+.contacto-form label{
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 5px;
+}
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form select,
+.contacto-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem; 
 }
 
-
-
-
+.contacto-form .submit-button{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.contact-form .submit-button:hover {
+    background-color: black;
+}
+.mapaC{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contacto p {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
 footer {
     text-align: center;
     background-color: #f19f1a;
     color: black;
-    padding: 15px;
+    padding: 25px;
+    font-size: 20px;
   }
   footer a {
     color:black;
