@@ -118,38 +118,37 @@ tabla1 td {
 
 main {
     display: grid;
-    gap: auto;
-    grid-template-areas:
-        "inf inf inf inf"
-        "edu edu pro pro"
-        "hab hab hab hab"
-        "con con con con";
+    gap: 0.5rem;
+    grid-template-columns: 2;
     max-width: 12000px;
     margin: 0 auto;
     padding: 20pxs;
 }
 
 #informacion {
-    grid-area: inf;
+    grid-column: 1/7;
+    grid-row: 1;
 }
 
 #educacion {
-    grid-area: edu;
-}
-
-#habilidades {
-    grid-area: hab;
+    grid-column: 1/4;
+    grid-row: 2;
 }
 
 #proyectos {
-    grid-area: pro;
+    grid-column: 4/7;
+    grid-row: 2;
+}
+
+#habilidades {
+    grid-column: 1/7;
+    grid-row: 3;
 }
 
 #contacto {
-    grid-area: con;
+    grid-column: 1/7;
+    grid-row: 4;
 }
-
-
 
 section {
 
@@ -349,7 +348,7 @@ header div {
 #divIP-within,
 #proyectos .Proyecto-T-whithin {
     background-color: #f19f1a;
-    
+
 }
 
 .contacto-info {
@@ -428,35 +427,42 @@ footer a {
 footer p {
     margin: auto;
 }
+
 @media (max-width: 800px) {
     .contacto-contenedor {
         grid-template-columns: 1fr;
     }
-    .subtitle{
+
+    .subtitle {
         text-align: start;
     }
-    main{
+
+    main {
         grid-template-columns: 1fr;
     }
-    #proyectos{
+
+    #proyectos {
         grid-column: 1 / 7;
-        grid-row: 3;  
+        grid-row: 3;
     }
-    #habilidades{
+
+    #habilidades {
         grid-column: 1 / 7;
-        grid-row: 4; 
+        grid-row: 4;
     }
-    #contacto{
+
+    #contacto {
         grid-column: 1 / 7;
         grid-row: 5;
     }
+
     #habilidades ul {
         grid-template-columns: 1fr;
-        width: 100%; 
+        width: 100%;
     }
 
     header nav ul {
-        flex-direction: row; 
+        flex-direction: row;
     }
 
     #FotoPrincipal img {
@@ -464,13 +470,15 @@ footer p {
         height: 200px;
     }
 
-    .contacto-form, .contacto-info {
-        width: 70%; 
-        margin: 0; 
+    .contacto-form,
+    .contacto-info {
+        width: 70%;
+        margin: 0;
     }
+
     .contacto-imagen {
         margin-top: 0;
         margin-left: 0;
     }
-    
+
 }
