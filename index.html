@@ -5,15 +5,19 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+        content="Curriculum Vitae de Adrian Salamea. Ingeniero en Ciencias de la Computación con interés en desarrollo web, videojuegos y ciberseguridad.">
+    <meta name="author" content="Adrian Salamea">
     <title>CV - Adrian Salamea</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="media/icono.png" type="image/png">
 </head>
 
 <body>
     <header>
-        <nav> 
+        <nav>
             <ul>
-                <li><a href="#informacion">Información Personal</a></li>
+                <li><a href="#informacion">Descripción Personal</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
@@ -22,21 +26,32 @@
         </nav>
         <div id="FotoPrincipal">
             <img id="photo" src="media/cara.jpg" alt="Foto de Adrian Salamea">
-            <h1 id="nombreP">Adrian Salamea</h1> 
-        </div>  
+            <h1 id="nombreP">Adrian Salamea</h1>
+        </div>
     </header>
     <main>
         <section id="informacion">
-            <h2 class="subtitle">Informacón Personal</h2>
-            <div id="divIP">
-                <p class="texto">Soy un estudiante entusiasta con gran interés en aprender más sobre desarrollo web. También me gustaría profundizar en el desarrollo de videojuegos y en ciberseguridad. Quisiera trabajar en proyectos relacionados con deportes extremos, desarrollo de videojuegos ya que estoy relacionado con estos temas.</p>
+            <h2 class="subtitle">Descripción Personal</h2>
+            <div class="info-personal">
+                <div id="divIP">
+                    <p class="texto">Soy un estudiante entusiasta y comprometido en Ingeniería en Ciencias
+                        Computacionales, con un profundo interés en el desarrollo web, ciberseguridad y desarrollo de
+                        videojuegos. Me motiva trabajar en proyectos innovadores, especialmente en áreas que conectan
+                        con mis pasiones, como los deportes extremos y el desarrollo de videojuegos. Busco oportunidades
+                        para aplicar y expandir mis conocimientos mientras contribuyo a proyectos que me desafíen y me
+                        permitan crecer profesionalmente.</p>
+                </div>
+                <div>
+                    <img id="IP" src="media/ip.png" alt="foto de informacion personal">
+                </div>
             </div>
         </section>
         <section id="educacion">
-            <h2 class="subtitle">Educación</h2>          
+            <h2 class="subtitle">Educación</h2>
             <table id="tabla1" border="2">
                 <thead>
                     <tr>
+                        <th></th>
                         <th>Instituto</th>
                         <th>Estudios</th>
                         <th>Estado</th>
@@ -44,11 +59,13 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <td><img src="media/imagen2.jpg" alt="Logo Domingo Comin" class="instituto-logo"></td>
                         <td>Domingo Comin</td>
                         <td>Bachillerato en mantenimiento e instalación de maquinas y equipos electricos</td>
                         <td>Completado</td>
                     </tr>
                     <tr>
+                        <td><img src="media/imagen1.jpg" alt="Logo ESPOL" class="instituto-logo"></td>
                         <td>ESPOL</td>
                         <td>Ingeneria en Ciencias de la Computación</td>
                         <td>En proceso</td>
@@ -69,10 +86,12 @@
             <h2 class="subtitle">Proyectos</h2>
             <div class="Proyecto-T">
                 <div class="CuadradoTexto">
-                    <strong>Computador Adivina:</strong> 
-                    <p>Este proyecto está desarrollado en el lenguaje de programación Java y utiliza herramientas como Scene
+                    <strong>Computador Adivina:</strong>
+                    <p>Este proyecto está desarrollado en el lenguaje de programación Java y utiliza herramientas como
+                        Scene
                         Builder.
-                        Consiste en un juego en el que la computadora adivina el animal en el que estás pensando mediante una
+                        Consiste en un juego en el que la computadora adivina el animal en el que estás pensando
+                        mediante una
                         serie de
                         preguntas.</p>
                 </div>
@@ -84,18 +103,18 @@
                 </div>
             </div>
         </section>
-        <section id = "contacto">
-            <h2 id ="contactoReuniones" class="subtitle">Contactame</h2>
+        <section id="contacto">
+            <h2 id="contactoReuniones" class="subtitle">Contactame</h2>
             <div class="contacto-contenedor">
-                <form action="#" method="post" class="contacto-form">
+                <form action="https://adrianlsq2000.github.io/curriculum/" class="contacto-form">
                     <!-- Nombre -->
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
-            
+
                     <!-- Correo electrónico -->
                     <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
-            
+
                     <!-- Asunto -->
                     <label for="asunto">Asunto:</label>
                     <select id="asunto" name="asunto">
@@ -103,19 +122,23 @@
                         <option value="sugerencia">Sugerencia</option>
                         <option value="reunion">Reunión Presencial</option>
                     </select>
-            
+
                     <!-- Mensaje -->
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje"></textarea>
-            
+
                     <!-- Enviar -->
                     <button class="submit-button" type="submit">Enviar mensaje</button>
                 </form>
                 <div class="contacto-info">
-                    <p>Si tienes un proyecto interesante o quieres discutir algún tema, separa una reunión presencial los martes, jueves y nos vemos aquí.</p>
+                    <p>Si tienes un proyecto interesante o quieres discutir algún tema, separa una reunión presencial
+                        los martes, jueves y nos vemos aquí.</p>
                     <iframe class="mapaC"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.51450030041!2d-80.04697183567608!3d-2.1475304351033766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1716782474152!5m2!1ses-419!2sec"
                         width="650" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contacto-imagen">
+                    <img src="media/monumento espol.jpg" alt="Imagen de contacto" class="imagen-encuentro">
                 </div>
             </div>
         </section>
@@ -123,10 +146,11 @@
     <footer>
         <p>© Adrian Salamea - 2024</p>
         <p> Conoce más de mi:
-        <a href="https://www.linkedin.com/in/adrian-salamea-127573254/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Adrianlsq2000" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/adrian-salamea-127573254/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Adrianlsq2000" target="_blank">GitHub</a>
         </p>
     </footer>
 </body>
+
 </html>
 
